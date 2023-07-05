@@ -1,4 +1,3 @@
-console.log('hello!')
 import dogs from './data.js'
 import Dog from './Dog.js'
 import { disableButtons, enableButtons } from './utils.js'
