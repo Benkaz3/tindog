@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'VIC', sans-serif;
+
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #e9c81b;
+    border-radius: 15px; 
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar {
+    height: 91px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+}
+
+.nav-bar img {
+    height: 70%;
+    cursor: pointer;
+}
+
+main {
+    position: relative;
+    height: 550px; 
+}
+
+.card {
+    position: relative;
+    height: 75%;
+}
+
+.dog-avatar {
+    height: 360px; 
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}
+
+.dog-text-wrapper {
+    color: #3D3519;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.dog-name {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.dog-bio {
+    margin-top: 0;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    margin: 0;
+    padding: 25px; 
+    align-self: last baseline;
+    z-index: 3;
+}
+
+.actions div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e9c81b;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 
+        rgba(0, 0, 0, 0.07) 0px 1px 2px, 
+        rgba(0, 0, 0, 0.07) 0px 2px 4px, 
+        rgba(0, 0, 0, 0.07) 0px 4px 8px, 
+        rgba(0, 0, 0, 0.07) 0px 8px 16px, 
+        rgba(0, 0, 0, 0.07) 0px 16px 32px, 
+        rgba(0, 0, 0, 0.07) 0px 32px 64px;
+ }
+
+.actions div:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.actions div:active {
+    transform: scale(0.9);
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid #3D3519;
+}
+
+
+.accept-state,
+.reject-state {
+    position: absolute;
+    left: 4%;
+    top: 4%;
+    width: 220px;
+    rotate: -30deg;
+    display: none;
+
+}
+
+.end-info {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+    background-color: #e9c81b;
+    color:#3D3519;
+    text-align: center;
+}
+.end-emoji {
+    font-size: 10rem;
+    padding: 0;
+    margin: 0;
+}
